@@ -1,0 +1,7 @@
+.badge-orange {
+    background: orangered;
+}
+
+li:hover {
+    cursor: pointer;
+}

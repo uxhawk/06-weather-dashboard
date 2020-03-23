@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!-- Google Places -->
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2T-3CWj9lXRN6dps1u_wj9GMvnYYHPDQ&libraries=places">
+    </script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    <script src="js/moment.js"></script>
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-dark d-flex justify-content-center">
+        <h1 class="text-white">Weather Dashboard</h1>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 bg-light min-vh-100">
+                <div class="input-group mb-3 mt-3">
+                    <input id="pac-input" type="text" class="form-control" placeholder="City"
+                        aria-label="search-city-button" aria-describedby="button-search">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" id="city-search"><i
+                                class="fas fa-search"></i></button>
+                    </div>
+                </div>
+
+                <ul id="search-history" class="list-group">
+                </ul>
+
+            </div>
+            <div class="col-9 p-3">
+                <div id="weather-card" class="card">
+                    <div id="city-weather" class="card-body">
+                        <h5 class="card-title"><span id="city-name" class="text-capitalize"></span><img
+                                id="weather-icon" src="" alt="Weather icon"></h5>
+                        <p>Temperature: <span id="cur-temp"></span>&#730 F</p>
+                        <p>Humidity: <span id="cur-humid"></span>%</p>
+                        <p>Wind Speed: <span id="cur-wind"></span></p>
+                        <div id="uv-container">
+                        </div>
+                    </div>
+                </div>
+                <h4 id="forecast-h4" class="p-0 mb-0 mt-4">5-Day Forecast</h4>
+                <div id="forecast" class="row p-3">
+                </div>
+                <div id="service"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+    <!-- Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
